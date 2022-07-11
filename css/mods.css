@@ -1,0 +1,163 @@
+html { scroll-behavior: smooth; }
+
+.titleBanner {
+  height: 90vh;
+  background: url("../images/bg-pattern.jpg");
+  background-size: cover;
+}
+
+.titleText {
+  position: sticky;
+  top: 10%;
+  mix-blend-mode: screen;
+  text-decoration: none;
+  color: inherit;
+}
+.titleText img { max-width: 60%; }
+@media (max-width: 992px) {
+  .titleText img {max-width: 100%; }
+}
+
+.navbar { min-height: 10vh; }
+.nav-link { border-bottom: 3px dotted #ffe866 !important; }
+.nav-link:hover { border-bottom: 3px dotted #f1424f !important; }
+
+.sectionHeader {
+  position: sticky;
+  top: 11vh;
+  margin-bottom: 20px;
+}
+
+.spacer { height: 70px; }
+
+.infoSection { line-height: 2em; }
+
+#electric { background-color: #f8d58c; }
+#cloud { background-color: #FFFFFF; }
+#stories { background-color: #4c8e8a; }
+#process { background-color: #e5d4f6; }
+#lights { background-color: #ab5b59; }
+#full { background-color: #000000; }
+
+.caption {
+  background-color: #ffffff;
+  color: #686868;
+}
+
+.jump {
+  font-size: 1.3em;
+  color: #ffe866;
+}
+
+.prompt {
+  text-shadow:  1.5px 1.5px gray,
+                3px 3px oldlace,
+                4.5px 4.5px mistyrose;
+  font-weight: 900;
+}
+
+#thunder0053 {
+  background: url("../images/Thunder_0053.JPG") no-repeat;
+  background-size: cover;
+  transition: background 0.3s linear;
+  width: 100%;
+  max-width: 1900px;
+  position: relative;
+}
+
+#thunder0053 img { visibility: hidden; max-width: 100%; }
+#thunder0053:hover, #thunder0053:active {
+  background: url("../images/Thunder_0053_highlight.jpg") no-repeat;
+  background-size: cover;
+}
+#anchor-thunder0053-electric {
+  height: 6%;
+  width: 70%;
+  position: absolute;
+  left: 13%;
+  top: 24%;
+}
+#anchor-thunder0053-lights {
+  height: 17.5%;
+  width: 70%;
+  position: absolute;
+  left: 11.5%;
+  top: 57.5%;
+}
+
+#cloud1 {
+  background: url("../images/comic1.png") no-repeat;
+  background-size: cover;
+  transition: background 0.1s linear;
+}
+
+#cloud1 img { visibility: hidden; }
+#cloud1:hover, .comicDiv1:active {
+  background: url("../images/comic2.png") no-repeat;
+  background-size: cover;
+}
+
+#cloud2 {
+  background: url("../images/comic3.png") no-repeat;
+  background-size: cover;
+  transition: background 0.1s linear;
+}
+
+#cloud2 img{ visibility: hidden; }
+#cloud2:hover, .comicDiv2:active {
+  background: url("../images/comic4.png") no-repeat;
+  background-size: cover;
+}
+
+#sun:hover { transform: rotate(0.5turn); }
+
+#meteors0062 {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+#anchor-meteors0062-sunrise {
+  height: 24%;
+  width: 82%;
+  position: absolute;
+  top: 36.5%;
+  left: 9%;
+}
+
+#meteors0063 {
+  width: 100%;
+  max-width: 1900px;
+  position: relative;
+}
+#anchor-meteors0063-nodoubt {
+  height: 20.5%;
+  width: 56%;
+  position: absolute;
+  top: 16%;
+  left: 29%;
+}
+#anchor-meteors0063-dawn {
+  height: 23%;
+  width: 56%;
+  position: absolute;
+  top: 36%;
+  left: 29%;
+}
+
+#fence1 {
+  background: url("../images/fence.png") repeat;
+  background-size: contain;
+}
+
+#fence2 {
+  background: url("../images/fence2.png") repeat;
+  background-size: contain;
+}
+
+#returnLink {
+  position: fixed;
+  bottom: 2vh;
+  right: 2vh;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}

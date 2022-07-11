@@ -1,0 +1,51 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// color overrides
+$body-bg: #FFFCF6;
+
+$custom-colors: (
+  "light": #FFF9ED,
+  "dark": #686868,
+  "nav": #ffe866,
+  "highlight": #75322E,
+  "electric": #bb9781,
+  "electricbg": #f8d58c,
+  "cloud": #7fdc6c,
+  "cloudbg": #FFFFFF,
+  "stories": #ff899f,
+  "storiesbg": #4c8e8a,
+  "process": #9E8706,
+  "processbg": #e5d4f6,
+  "lights": #e5d4f6,
+  "lightsbg": #ab5b59,
+  "full": #f1424f,
+  "fullbg": #000000
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+$utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+
+// typography & text overrides
+$font-family-base: "Andale Mono", AndaleMono, monospace;
+$mark-bg: #FCBECA;
+$link-color: #DA3C48;
+$link-decoration: none;
+$link-shade-percentage: 40%;
+$link-hover-color: shift-color($link-color, $link-shade-percentage);
+
+// nav link/button overrides
+$nav-link-color: #4c8e8a;
+$nav-link-hover-color: #f1424f;
+$nav-pills-link-active-bg: #f1424f;
+$nav-pills-border-radius: 50px;
+$btn-border-radius: 50%;
+$btn-hover-bg-tint-amount: 30%;
+$btn-hover-border-tint-amount: 20%;
+
+// layout overrides
+
+@import "../node_modules/bootstrap/scss/bootstrap";
