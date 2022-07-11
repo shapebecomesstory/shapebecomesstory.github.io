@@ -57,15 +57,14 @@ html { scroll-behavior: smooth; }
 }
 
 #thunder0053 {
-  background: url("../images/Thunder_0053.JPG") no-repeat;
+  background: url("../images/Thunder_0053.JPG") no-repeat,
+              url("../images/Thunder_0053_highlight.jpg") no-repeat;
   background-size: cover;
   transition: background 0.3s linear;
   width: 100%;
   max-width: 1900px;
   position: relative;
 }
-
-#thunder0053 img { visibility: hidden; max-width: 100%; }
 #thunder0053:hover, #thunder0053:active {
   background: url("../images/Thunder_0053_highlight.jpg") no-repeat;
   background-size: cover;
@@ -86,24 +85,22 @@ html { scroll-behavior: smooth; }
 }
 
 #cloud1 {
-  background: url("../images/comic1.png") no-repeat;
+  background: url("../images/comic1.png") no-repeat,
+              url("../images/comic2.png") no-repeat;
   background-size: cover;
   transition: background 0.1s linear;
 }
-
-#cloud1 img { visibility: hidden; }
 #cloud1:hover, .comicDiv1:active {
   background: url("../images/comic2.png") no-repeat;
   background-size: cover;
 }
 
 #cloud2 {
-  background: url("../images/comic3.png") no-repeat;
+  background: url("../images/comic3.png") no-repeat,
+              url("../images/comic4.png") no-repeat;
   background-size: cover;
   transition: background 0.1s linear;
 }
-
-#cloud2 img{ visibility: hidden; }
 #cloud2:hover, .comicDiv2:active {
   background: url("../images/comic4.png") no-repeat;
   background-size: cover;
