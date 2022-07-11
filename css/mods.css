@@ -15,7 +15,8 @@ html { scroll-behavior: smooth; }
 }
 .titleText img { max-width: 60%; }
 @media (max-width: 992px) {
-  .titleText img {max-width: 100%; }
+  .titleText img { top: 15%; }
+  .titleText img { max-width: 100%; }
 }
 
 .navbar { min-height: 10vh; }
