@@ -37,6 +37,7 @@
   --bs-light: #FFFFFF;
   --bs-dark: #686868;
   --bs-highlight: #4c8e8a;
+  --bs-link: #B3E5E2;
   --bs-electric: #bb9781;
   --bs-electricbg: #f8d58c;
   --bs-cloud: #7fdc6c;
@@ -58,6 +59,7 @@
   --bs-light-rgb: 255, 255, 255;
   --bs-dark-rgb: 104, 104, 104;
   --bs-highlight-rgb: 76, 142, 138;
+  --bs-link-rgb: 179, 229, 226;
   --bs-electric-rgb: 187, 151, 129;
   --bs-electricbg-rgb: 248, 213, 140;
   --bs-cloud-rgb: 127, 220, 108;
@@ -3221,6 +3223,36 @@ textarea.form-control-lg {
   border-color: #4c8e8a;
 }
 
+.btn-link {
+  color: #000;
+  background-color: #B3E5E2;
+  border-color: #B3E5E2;
+}
+.btn-link:hover {
+  color: #000;
+  background-color: #caedeb;
+  border-color: #c2eae8;
+}
+.btn-check:focus + .btn-link, .btn-link:focus {
+  color: #000;
+  background-color: #caedeb;
+  border-color: #c2eae8;
+  box-shadow: 0 0 0 0.25rem rgba(152, 195, 192, 0.5);
+}
+.btn-check:checked + .btn-link, .btn-check:active + .btn-link, .btn-link:active, .btn-link.active, .show > .btn-link.dropdown-toggle {
+  color: #000;
+  background-color: #c2eae8;
+  border-color: #bbe8e5;
+}
+.btn-check:checked + .btn-link:focus, .btn-check:active + .btn-link:focus, .btn-link:active:focus, .btn-link.active:focus, .show > .btn-link.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(152, 195, 192, 0.5);
+}
+.btn-link:disabled, .btn-link.disabled {
+  color: #000;
+  background-color: #B3E5E2;
+  border-color: #B3E5E2;
+}
+
 .btn-electric {
   color: #000;
   background-color: #bb9781;
@@ -3803,6 +3835,31 @@ textarea.form-control-lg {
 }
 .btn-outline-highlight:disabled, .btn-outline-highlight.disabled {
   color: #4c8e8a;
+  background-color: transparent;
+}
+
+.btn-outline-link {
+  color: #B3E5E2;
+  border-color: #B3E5E2;
+}
+.btn-outline-link:hover {
+  color: #000;
+  background-color: #B3E5E2;
+  border-color: #B3E5E2;
+}
+.btn-check:focus + .btn-outline-link, .btn-outline-link:focus {
+  box-shadow: 0 0 0 0.25rem rgba(179, 229, 226, 0.5);
+}
+.btn-check:checked + .btn-outline-link, .btn-check:active + .btn-outline-link, .btn-outline-link:active, .btn-outline-link.active, .btn-outline-link.dropdown-toggle.show {
+  color: #000;
+  background-color: #B3E5E2;
+  border-color: #B3E5E2;
+}
+.btn-check:checked + .btn-outline-link:focus, .btn-check:active + .btn-outline-link:focus, .btn-outline-link:active:focus, .btn-outline-link.active:focus, .btn-outline-link.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(179, 229, 226, 0.5);
+}
+.btn-outline-link:disabled, .btn-outline-link.disabled {
+  color: #B3E5E2;
   background-color: transparent;
 }
 
@@ -5646,6 +5703,15 @@ textarea.form-control-lg {
   color: #254442;
 }
 
+.alert-link {
+  color: #485c5a;
+  background-color: #f0faf9;
+  border-color: #e8f7f6;
+}
+.alert-link .alert-link {
+  color: #3a4a48;
+}
+
 .alert-electric {
   color: #705b4d;
   background-color: #f1eae6;
@@ -6144,6 +6210,20 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #2e5553;
   border-color: #2e5553;
+}
+
+.list-group-item-link {
+  color: #485c5a;
+  background-color: #f0faf9;
+}
+.list-group-item-link.list-group-item-action:hover, .list-group-item-link.list-group-item-action:focus {
+  color: #485c5a;
+  background-color: #d8e1e0;
+}
+.list-group-item-link.list-group-item-action.active {
+  color: #fff;
+  background-color: #485c5a;
+  border-color: #485c5a;
 }
 
 .list-group-item-electric {
@@ -7376,6 +7456,13 @@ textarea.form-control-lg {
   color: #94bbb9;
 }
 
+.link-link {
+  color: #B3E5E2;
+}
+.link-link:hover, .link-link:focus {
+  color: #d1efee;
+}
+
 .link-electric {
   color: #bb9781;
 }
@@ -7884,6 +7971,10 @@ textarea.form-control-lg {
 
 .border-highlight {
   border-color: #4c8e8a !important;
+}
+
+.border-link {
+  border-color: #B3E5E2 !important;
 }
 
 .border-electric {
@@ -8776,6 +8867,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-highlight-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-link {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-link-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-electric {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-electric-rgb), var(--bs-text-opacity)) !important;
@@ -8915,6 +9011,11 @@ textarea.form-control-lg {
 .bg-highlight {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-highlight-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-link {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-link-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-electric {
