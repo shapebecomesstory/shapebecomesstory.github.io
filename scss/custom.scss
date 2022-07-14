@@ -2,13 +2,12 @@
 @import "../node_modules/bootstrap/scss/variables";
 
 // color overrides
-$body-bg: #FFFCF6;
+$body-bg: #FFFFFF;
 
 $custom-colors: (
-  "light": #FFF9ED,
+  "light": #FFFFFF,
   "dark": #686868,
-  "nav": #ffe866,
-  "highlight": #75322E,
+  "highlight": #4c8e8a,
   "electric": #bb9781,
   "electricbg": #f8d58c,
   "cloud": #7fdc6c,
@@ -30,17 +29,19 @@ $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text"
 $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 // typography & text overrides
-$font-family-base: "Andale Mono", AndaleMono, monospace;
-$mark-bg: #FCBECA;
-$link-color: #DA3C48;
+//$font-family-base: "Andale Mono", AndaleMono, monospace;
+$font-family-base: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$mark-bg: #B3E5E2;
+$link-color: #4c8e8a;
 $link-decoration: none;
 $link-shade-percentage: 40%;
 $link-hover-color: shift-color($link-color, $link-shade-percentage);
 
 // nav link/button overrides
 $nav-link-color: #4c8e8a;
-$nav-link-hover-color: #f1424f;
-$nav-pills-link-active-bg: #f1424f;
+$nav-link-hover-color: #B3E5E2;
+$nav-pills-link-active-color: #4c8e8a;
+$nav-pills-link-active-bg: #B3E5E2;
 $nav-pills-border-radius: 50px;
 $btn-border-radius: 50%;
 $btn-hover-bg-tint-amount: 30%;

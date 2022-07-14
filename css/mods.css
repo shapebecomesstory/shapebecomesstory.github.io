@@ -2,12 +2,12 @@ html { scroll-behavior: smooth; }
 
 .titleBanner {
   height: 90vh;
-  background: url("../images/bg-pattern.jpg");
+  background-color: black;
   background-size: cover;
 }
 
 .titleText {
-  position: sticky;
+  position: relative;
   top: 10%;
   mix-blend-mode: screen;
   text-decoration: none;
@@ -19,8 +19,8 @@ html { scroll-behavior: smooth; }
 }
 
 .navbar { min-height: 10vh; }
-.nav-link { border-bottom: 3px dotted #ffe866 !important; }
-.nav-link:hover { border-bottom: 3px dotted #f1424f !important; }
+/*.nav-link { border-bottom: 3px dotted #ffffff !important; }*/
+/*.nav-link:hover { border-bottom: 3px dotted #B3E5E2 !important; }*/
 
 .sectionHeader {
   position: sticky;
@@ -42,6 +42,7 @@ html { scroll-behavior: smooth; }
 .caption {
   background-color: #ffffff;
   color: #686868;
+  font-size: 0.9em;
 }
 
 .jump {
@@ -56,7 +57,7 @@ html { scroll-behavior: smooth; }
   font-weight: 900;
 }
 
-#thunder0053 {
+.thunder0053 {
   background: url("../images/Thunder_0053.JPG") no-repeat,
               url("../images/Thunder_0053_highlight.jpg") no-repeat;
   background-size: cover;
@@ -65,7 +66,7 @@ html { scroll-behavior: smooth; }
   max-width: 1900px;
   position: relative;
 }
-#thunder0053:hover, #thunder0053:active {
+.thunder0053:hover {
   background: url("../images/Thunder_0053_highlight.jpg") no-repeat;
   background-size: cover;
 }
@@ -84,31 +85,31 @@ html { scroll-behavior: smooth; }
   top: 57.5%;
 }
 
-#cloud1 {
+.cloud1 {
   background: url("../images/comic1.png") no-repeat,
               url("../images/comic2.png") no-repeat;
   background-size: cover;
   transition: background 0.1s linear;
 }
-#cloud1:hover, .comicDiv1:active {
+.cloud1:hover {
   background: url("../images/comic2.png") no-repeat;
   background-size: cover;
 }
 
-#cloud2 {
+.cloud2 {
   background: url("../images/comic3.png") no-repeat,
               url("../images/comic4.png") no-repeat;
   background-size: cover;
   transition: background 0.1s linear;
 }
-#cloud2:hover, .comicDiv2:active {
+.cloud2:hover {
   background: url("../images/comic4.png") no-repeat;
   background-size: cover;
 }
 
 #sun:hover { transform: rotate(0.5turn); }
 
-#meteors0062 {
+.meteors0062 {
   width: 100%;
   max-width: 1200px;
   position: relative;
@@ -121,7 +122,7 @@ html { scroll-behavior: smooth; }
   left: 9%;
 }
 
-#meteors0063 {
+.meteors0063 {
   width: 100%;
   max-width: 1900px;
   position: relative;
@@ -141,12 +142,12 @@ html { scroll-behavior: smooth; }
   left: 29%;
 }
 
-#fence1 {
+.fence1 {
   background: url("../images/fence.png") repeat;
   background-size: contain;
 }
 
-#fence2 {
+.fence2 {
   background: url("../images/fence2.png") repeat;
   background-size: contain;
 }

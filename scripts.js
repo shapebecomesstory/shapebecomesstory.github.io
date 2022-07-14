@@ -1,6 +1,6 @@
 //scroll offset to account for navbar height
 var scrollOffset = $("#scrollspyNav").height();
-$(".scrollSection").css({paddingTop: scrollOffset + 15 + "px"});
+$(".scrollSection").css({paddingTop: scrollOffset + 20 + "px"});
 
 //return-to-top button visibility
 $(document).ready( function() {
