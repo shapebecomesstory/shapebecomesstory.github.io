@@ -47,7 +47,10 @@ html { scroll-behavior: smooth; }
 
 .jump {
   font-size: 1.3em;
-  color: #ffe866;
+  transition: filter 0.15s linear;
+}
+.jump:hover, .jump:active {
+  filter: brightness(50%) !important;
 }
 
 .prompt {
@@ -110,36 +113,53 @@ html { scroll-behavior: smooth; }
 #sun:hover { transform: rotate(0.5turn); }
 
 .meteors0062 {
+  background: url("../images/Meteors_0062.JPG") no-repeat,
+              url("../images/Meteors_0062_highlight.jpg") no-repeat;
+  background-size: contain;
+  transition: background 0.3s linear;
   width: 100%;
+  height: auto;
   max-width: 1200px;
   position: relative;
 }
+.meteors0062:hover {
+  background: url("../images/Meteors_0062_highlight.jpg") no-repeat;
+  background-size: contain;
+}
 #anchor-meteors0062-sunrise {
-  height: 24%;
-  width: 82%;
+  height: 22%;
+  width: 84%;
   position: absolute;
-  top: 36.5%;
-  left: 9%;
+  top: 35%;
+  left: 8%;
 }
 
 .meteors0063 {
+  background: url("../images/Meteors_0063.JPG") no-repeat,
+              url("../images/Meteors_0063_highlight.jpg") no-repeat;
+  background-size: contain;
+  transition: background 0.3s linear;
   width: 100%;
   max-width: 1900px;
   position: relative;
 }
+.meteors0063:hover {
+  background: url("../images/Meteors_0063_highlight.jpg") no-repeat;
+  background-size: contain;
+}
 #anchor-meteors0063-nodoubt {
-  height: 20.5%;
-  width: 56%;
+  height: 19.5%;
+  width: 55.5%;
   position: absolute;
-  top: 16%;
-  left: 29%;
+  top: 15%;
+  left: 29.5%;
 }
 #anchor-meteors0063-dawn {
-  height: 23%;
-  width: 56%;
+  height: 21%;
+  width: 55.5%;
   position: absolute;
-  top: 36%;
-  left: 29%;
+  top: 34%;
+  left: 29.5%;
 }
 
 .fence1 {
