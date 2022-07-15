@@ -1,5 +1,9 @@
 html { scroll-behavior: smooth; }
 
+:target {
+  scroll-margin-top: 9vh;
+}
+
 .titleBanner {
   height: 90vh;
   background-color: black;
