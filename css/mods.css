@@ -21,6 +21,9 @@ html { scroll-behavior: smooth; }
 @media (max-width: 992px) {
   .titleText img { max-width: 100%; }
 }
+@media (max-width: 576px) {
+  .titleBanner { height: 80vh; }
+}
 
 .navbar { min-height: 10vh; }
 /*.nav-link { border-bottom: 3px dotted #ffffff !important; }*/
