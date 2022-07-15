@@ -18,6 +18,7 @@ html { scroll-behavior: smooth; }
   color: inherit;
 }
 .titleText img { max-width: 60%; }
+
 @media (max-width: 992px) {
   .titleText img { max-width: 100%; }
 }
@@ -35,6 +36,10 @@ html { scroll-behavior: smooth; }
   margin-bottom: 20px;
 }
 
+.scrollSection {
+  padding-top: 30px;
+}
+
 .spacer { height: 70px; }
 
 .infoSection { line-height: 2em; }
@@ -44,7 +49,7 @@ html { scroll-behavior: smooth; }
 #stories { background-color: #4c8e8a; }
 #process { background-color: #e5d4f6; }
 #lights { background-color: #ab5b59; }
-#full { background-color: #000000; }
+#wearefull { background-color: #000000; }
 
 .caption {
   background-color: #ffffff;
